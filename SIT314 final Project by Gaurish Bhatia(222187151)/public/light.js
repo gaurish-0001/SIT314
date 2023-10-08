@@ -1,3 +1,4 @@
+// NAME : Gaurish Bhatia 
 function toggle() {
     var button = document.getElementById("toggleButton");
     var status = document.getElementById("status");
