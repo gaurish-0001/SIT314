@@ -1,3 +1,4 @@
+// NAME : Gaurish Bhatia 
 document.addEventListener("DOMContentLoaded", function () {
     var addButton = document.getElementById("add-btn");
     var tableBody = document.querySelector("#data-table tbody");
