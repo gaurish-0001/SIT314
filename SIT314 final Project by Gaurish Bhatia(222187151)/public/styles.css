@@ -1,0 +1,26 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #aecce6;
+}
+
+.hero {
+    background-color: #61a5ea;
+    padding: 50px 0;
+}
+
+.products {
+    padding: 50px 0;
+}
+
+.card {
+    margin-bottom: 30px;
+}
+
+.footer {
+    background-color: #4490db;
+    color: rgb(226, 216, 216);
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
