@@ -1,3 +1,4 @@
+//  Name : Gaurish Bhatia
 document.addEventListener("DOMContentLoaded", function () {
     // Create initial empty traces
     var numDataPoints = 20;
