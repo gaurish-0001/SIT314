@@ -1,3 +1,7 @@
+// Name : Gaurish Bhatia
+
+
+// including the required modules.
 const express = require('express');
 const app = express();
 const port = 3001;
@@ -9,10 +13,13 @@ const mongoose = require('mongoose')
 const Sensor = require('./models/lightsensor')
 app.use(express.static('public'));
 
+// printing  the port onto the console.
 app.listen(port, () => {
   console.log(`listening on port ${port}`);
 });
 
+
+// connecting to the mongoDB cluster.
 mongoose.connect('mongodb+srv://gaurish:gaurish@sls.wrqupbr.mongodb.net/?retryWrites=true&w=majority', {
   useNewUrlParser: true,
   useUnifiedTopology: true
@@ -24,7 +31,8 @@ mongoose.connect('mongodb+srv://gaurish:gaurish@sls.wrqupbr.mongodb.net/?retryWr
   console.error('MongoDB Connection Error:', error);
 });
 
-setInterval(sensor_publish, 5000)
+
+setInterval(sensor_publish, 3000)
 
 function sensor_publish() {
   // Dummy sensor data.
@@ -66,7 +74,7 @@ function sensor_publish() {
 
 
 
-
+// path for the different directories
 app.get('/table', (req, res) => {
     res.sendFile(`${base}/table.html`);
   });
